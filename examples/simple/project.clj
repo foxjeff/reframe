@@ -1,6 +1,7 @@
 (defproject simple "0.9.0"
   :dependencies [[org.clojure/clojure        "1.8.0"]
                  [org.clojure/clojurescript  "1.9.227"]
+                 [binaryage/devtools "0.9.4"]
                  [reagent  "0.7.0"]
                  [re-frame "0.9.4"]]
 

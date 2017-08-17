@@ -1,6 +1,7 @@
 (ns simple.core
   (:require [reagent.core :as reagent]
             [re-frame.core :as rf]
+            [cljs.pprint :refer [pprint]]
             [clojure.string :as str]))
 
 ;; A detailed walk-through of this source code is provied in the docs:
@@ -77,7 +78,8 @@
   [:div
    [:h1 "Hello world, it is now"]
    [clock]
-   [color-input]])
+   [color-input]
+   [:pre (with-out-str (pprint @re-frame.db/app-db))]])
 
 ;; -- Entry Point -------------------------------------------------------------
 
